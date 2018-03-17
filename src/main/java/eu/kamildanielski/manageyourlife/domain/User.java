@@ -1,4 +1,4 @@
-package domain;
+package eu.kamildanielski.manageyourlife.domain;
 
 import lombok.Data;
 

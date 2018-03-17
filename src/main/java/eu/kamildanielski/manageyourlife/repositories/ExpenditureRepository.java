@@ -1,6 +1,6 @@
-package repositories;
+package eu.kamildanielski.manageyourlife.repositories;
 
-import domain.Expenditure;
+import eu.kamildanielski.manageyourlife.domain.Expenditure;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ExpenditureRepository extends CrudRepository<Expenditure, Long> {

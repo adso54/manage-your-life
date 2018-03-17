@@ -1,8 +1,8 @@
-package services;
+package eu.kamildanielski.manageyourlife.services;
 
-import domain.User;
+import eu.kamildanielski.manageyourlife.domain.User;
 import org.springframework.stereotype.Service;
-import repositories.UserRepository;
+import eu.kamildanielski.manageyourlife.repositories.UserRepository;
 
 import java.util.HashSet;
 import java.util.Set;

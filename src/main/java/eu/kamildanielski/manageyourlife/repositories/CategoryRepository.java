@@ -1,6 +1,6 @@
-package repositories;
+package eu.kamildanielski.manageyourlife.repositories;
 
-import domain.Category;
+import eu.kamildanielski.manageyourlife.domain.Category;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

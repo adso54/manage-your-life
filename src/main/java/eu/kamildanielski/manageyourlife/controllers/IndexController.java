@@ -1,9 +1,9 @@
-package controllers;
+package eu.kamildanielski.manageyourlife.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import services.UserService;
+import eu.kamildanielski.manageyourlife.services.UserService;
 
 @Controller
 public class IndexController {

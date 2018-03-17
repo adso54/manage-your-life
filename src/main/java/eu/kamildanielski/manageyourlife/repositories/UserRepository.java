@@ -1,6 +1,6 @@
-package repositories;
+package eu.kamildanielski.manageyourlife.repositories;
 
-import domain.User;
+import eu.kamildanielski.manageyourlife.domain.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
