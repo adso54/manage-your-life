@@ -8,7 +8,7 @@ import eu.kamildanielski.manageyourlife.services.UserService;
 @Controller
 public class IndexController {
 
-    private UserService userService;
+    private final UserService userService;
 
     public IndexController(UserService userService) {
         this.userService = userService;
