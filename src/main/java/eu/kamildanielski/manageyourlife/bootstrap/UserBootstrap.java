@@ -31,7 +31,7 @@ public class UserBootstrap implements ApplicationListener<ContextRefreshedEvent>
     @Override
     @Transactional
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
-        userRepository.saveAll(getUsers());
+       // userRepository.saveAll(getUsers());
 
     }
 
