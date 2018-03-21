@@ -17,7 +17,6 @@ public class Category  {
     @Lob
     private String description;
 
-    @ManyToOne
-    private SubCategory subCategory;
+
 
 }

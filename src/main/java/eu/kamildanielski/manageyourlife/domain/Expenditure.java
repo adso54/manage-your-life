@@ -22,4 +22,7 @@ public class Expenditure {
 
     @ManyToOne
     private Category category;
+
+    @ManyToOne
+    private SubCategory subCategory;
 }

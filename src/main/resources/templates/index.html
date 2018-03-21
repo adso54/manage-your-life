@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Expenditures</title>
+</head>
+<body>
+<h1>Kamil and Monika expenditures!</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Sub-category</th>
+        <th>Value</th>
+        <th>Payer</th>
+    </tr>
+    <tr th:each="expenditure : ${expenditures}">
+        <td th:text="${expenditure.id}">123</td>
+        <td th:text="${expenditure.date}">2018-01-10</td>
+        <td th:text="${expenditure.category.getName()}">Food</td>
+        <td th:text="${expenditure.subCategory.getName()}">Pizza</td>
+        <td th:text="${expenditure.value}">31.15</td>
+        <td th:text="${expenditure.user.getFirstName()}">Kamil</td>
+    </tr>
+</table>
+</body>
+</html>

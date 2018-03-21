@@ -8,5 +8,3 @@ INSERT INTO sub_category (name, description) VALUES ('Gasoline','Drink for the c
 INSERT INTO sub_category (name, description) VALUES ('Insurance','OC/AC');
 INSERT INTO sub_category (name, description) VALUES ('Rent','');
 INSERT INTO sub_category (name, description) VALUES ('Loan installment','Rly hurt');
-INSERT INTO [user] (first_name, last_name, email, login) VALUES ('Kamil','Danielski','kamil.danielski@gmail.com','kdanielski');
-INSERT INTO [user] (first_name, last_name, email, login) VALUES ('Monika','Nowogórska','monika25t8@gmail.com','mnowogorska');
