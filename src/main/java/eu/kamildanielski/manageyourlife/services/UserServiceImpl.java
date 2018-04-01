@@ -25,4 +25,14 @@ public class UserServiceImpl implements UserService {
 
         return userSet;
     }
+
+//    @Override
+//    public User getUserByEmail() {
+//        userRepository.findByEmail()
+//    }
+
+//    @Override
+//    public User getUserById(Long id) {
+//        return userRepository.findAllById(id);
+//    }
 }
