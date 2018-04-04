@@ -8,7 +8,5 @@ public interface UserService {
 
     Set<User> getUsers();
 
-//    User getUserByEmail(String email);
-//
-//    User getUserById(Long id);
+    User getUserById(Long id);
 }

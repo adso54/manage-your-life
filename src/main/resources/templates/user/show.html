@@ -23,7 +23,7 @@
             <div class="pannel-group">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h1 class="panel-title" th:text="${user.description}">Recipe Description Here!</h1>
+                        <h1 class="panel-title" th:text="${user.getFirstName() + ' ' + user.getLastName() }">User name here!</h1>
                     </div>
                     <div class="panel-body">
                         <div class="row">

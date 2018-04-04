@@ -5,10 +5,12 @@ import org.springframework.stereotype.Service;
 import eu.kamildanielski.manageyourlife.repositories.UserRepository;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 @Service
 public class UserServiceImpl implements UserService {
+
 
     private UserRepository userRepository;
 
@@ -26,13 +28,13 @@ public class UserServiceImpl implements UserService {
         return userSet;
     }
 
-//    @Override
-//    public User getUserByEmail() {
-//        userRepository.findByEmail()
-//    }
+    @Override
+    public User getUserById(Long id) {
+        Optional<User> userOptional = userRepository.findById(id);
 
-//    @Override
-//    public User getUserById(Long id) {
-//        return userRepository.findAllById(id);
-//    }
+        if(!userOptional.isPresent())
+            throw new RuntimeException("User not found!");
+
+        return userOptional.get();
+    }
 }

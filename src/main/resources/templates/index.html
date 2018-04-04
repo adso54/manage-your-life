@@ -25,7 +25,8 @@
             <div class="panel panel-primary">
 
                 <div class="panel-heading">
-                    <h1 class="panel-title">Kamil and Monika expenditures!</h1>
+                    <h1 class="panel-title">Kamil and Monika expenditures! <a href="userExpenditures.html"> >>Go to see all expenditures with filters<< </a></h1>
+
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive" th:if="${not #lists.isEmpty(expenditures)}">
@@ -67,7 +68,7 @@
                                 <td th:text="${expenditure.subCategory.getName()}">Pizza</td>
                                 <td th:text="${expenditure.value}">31.15</td>
                                 <td th:text="${expenditure.user.getFirstName()}">Kamil</td>
-                                <td><a href="#" th:href="@{'/User/show/' + ${expenditure.user.getId()}}">View</a></td>
+                                <td><a href="#" th:href="@{'/user/show/' + ${expenditure.user.getId()}}">View</a></td>
                             </tr>
                         </table>
 
